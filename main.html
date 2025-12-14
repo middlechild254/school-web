@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Student Portal - Sunnydale Primary</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header-wrap">
+        <div class="header container">
+            <a class="logo" href="index.html">Mitaboni Boys High School</a>
+
+            <nav class="nav"><a href="index.html">Home</a>
+                <a href="pages/fee.html">Fees</a>
+                <a href="pages/assignment.html">Assignments</a>
+                <a href="pages/result.html">Result</a>
+                <a href="pages/attendance.html">Attendance</a>
+                <a href="pages/callender.html">Calendar</a>
+                <a href="index.html" class="active">Portal</a>
+            </nav>
+            <div id="mobileMenuBtn9" class="menu-toggle"><span class="bar"></span><span class="bar"></span><span
+                    class="bar"></span></div>
+        </div>
+    </div>
+
+    <section class="hero-small">
+        <div class="container">
+            <h1>Mitaboni Boys Student Portal</h1>
+            <p class="lead">Welcome — to your school portal view your assignments, attendance, results and fee status.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="dashboard">
+            <div class="panel">
+                <h3>Student Information</h3>
+                <img src="" alt="profile">
+                <p class="meta">James Morgan • Form 4 B</p>
+                <p class="meta">Christine Wavinya • Class teacher</p>
+                <p class="meta">Chris John • Parent</p>
+                <p class="meta">Britan troll • Class Rep</p>
+                <p class="meta">Drama  • Club</p>
+                <div style="height:14px"></div>
+                <div class="panel">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="pages/assignment.html">Assignments</a></li>
+                        <li><a href="pages/result.html">Results</a></li>
+                        <li><a href="pages/fee.html">Fees</a></li>
+                        <li><a href="pages/attendance.html">Attendance</a></li>
+                        <li><a href="pages/callender.html">Calender</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div class="panel">
+                    <h3>Key Stats</h3>
+                    <div class="stat-grid">
+                        <div class="stat">
+                            <div>Attendance</div><strong>96%</strong>
+                        </div>
+                        <div class="stat">
+                            <div>Assignments Due</div><strong>2</strong>
+                        </div>
+                        <div class="stat">
+                            <div>Fee Balance</div><strong>$120</strong>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h3>Assignments</h3>
+                    <div class="assignment-list">
+                        <div class="card"><strong>Math Exercise</strong>
+                            <div class="meta">Due: Mar 5, 2025</div>
+                        </div>
+                        <div class="card"><strong>Science Project</strong>
+                            <div class="meta">Due: Mar 12, 2025</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h3>Recent Notices</h3>
+                    <div class="notice-list">
+                        <div class="card">School closed for Eid on Apr 2, 2025</div>
+                        <div class="card">Parent-teacher meeting scheduled Mar 22, 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">© 2025 Mitaboni Boys High School</footer>
+    <script>document.getElementById('mobileMenuBtn9').addEventListener('click', () => document.querySelector('.nav').classList.toggle('show'));</script>
+</body>
+
+</html>
