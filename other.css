@@ -1,0 +1,550 @@
+/* ------------------------------
+   GLOBAL STYLE (style.css)
+   Shared by all pages
+   ------------------------------ */
+
+/* Reset + base */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 28px;
+  background: #2C3E50;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: #fff;
+  font-weight: 600;
+  padding: 8px;
+  transition: color .2s ease;
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+  color: #E67E22;
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.menu-toggle .bar {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  display: block;
+  transition: all .3s ease;
+}
+
+/* Hero sections */
+.hero,
+.hero-small {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  padding: 120px 20px;
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/hero.jpg') center/cover no-repeat;
+}
+
+.hero-small {
+  padding: 90px 20px;
+  background: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url('images/hero.jpg') center/cover no-repeat;
+}
+
+.hero h1,
+.hero-small h1 {
+  font-size: 2.8rem;
+  margin: 0 0 14px;
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.hero p,
+.hero-small p {
+  max-width: 760px;
+  margin: 0 auto 18px;
+  font-size: 1.05rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #E67E22;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #3498DB;
+  color: #fff;
+}
+
+/* Section headings */
+h2 {
+  font-size: 2.2rem;
+  color: #2C3E50;
+  margin: 0 0 18px;
+}
+
+.lede {
+  max-width: 900px;
+  margin: 0 auto 18px;
+  color: #34495E;
+  font-size: 1.05rem;
+}
+
+/* Layout helpers */
+.section {
+  padding: 60px 20px;
+}
+
+/* Programs / Features / Cards grid */
+.program-grid,
+.feature-grid,
+.resource-grid,
+.staff-grid,
+.achievement-grid,
+.feature-grid,
+.gallery-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.program-card,
+.feature-card,
+.resource-card,
+.staff-card,
+.achievement-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.program-card img,
+.feature-card img,
+.staff-card img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  margin: 0 auto 12px;
+  border-radius: 8px;
+}
+
+/* Feature card variant */
+.feature-card {
+  background: #3498DB;
+  color: #fff;
+}
+
+.feature-card h3 {
+  margin-bottom: 8px;
+}
+
+/* Resource cards (links) */
+.resource-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  width: 220px;
+  background: #ECF0F1;
+  color: #2C3E50;
+  border-radius: 8px;
+}
+
+/* Achievements */
+.achievement-card {
+  background: #3498DB;
+  color: #fff;
+}
+
+.achievement-card h3 {
+  font-size: 1.8rem;
+  margin: 0 0 8px;
+}
+
+/* Admissions info & contact cards */
+.admissions-info,
+.admission-form-section,
+.faq,
+.gallery,
+.programs,
+.features,
+.achievements {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Forms */
+.admission-form,
+.admission-form-section form {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #E67E22;
+  box-shadow: 0 0 8px rgba(230, 126, 34, 0.18);
+  outline: none;
+}
+
+/* Submit buttons */
+.admission-form button,
+.admission-form .btn {
+  border: none;
+}
+
+/* Gallery */
+.gallery-grid {
+  gap: 12px;
+}
+
+.gallery-grid img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .25s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 1500;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  color: #fff;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.lightbox-caption {
+  color: #fff;
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* Staff cards */
+.staff-card {
+  width: 220px;
+  text-align: center;
+  padding: 18px;
+}
+
+.staff-card.small img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.staff-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0 auto 10px;
+}
+
+/* FAQ */
+.faq-item {
+  max-width: 760px;
+  margin: 8px auto;
+  text-align: left;
+}
+
+.faq-question {
+  width: 100%;
+  background: #3498DB;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: left;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #ECF0F1;
+  border-radius: 0 0 8px 8px;
+  transition: max-height .28s ease;
+  padding: 0 12px;
+}
+
+.faq-answer p {
+  margin: 10px 0;
+  color: #34495E;
+}
+
+/* CTA section */
+.cta {
+  padding: 60px 20px;
+  background: #2C3E50;
+  color: #fff;
+  text-align: center;
+}
+
+.cta p {
+  color: #eee;
+}
+
+/* Footer */
+footer {
+  padding: 26px 20px;
+  text-align: center;
+  background: #34495E;
+  color: #fff;
+}
+
+/* Utilities */
+.lede {
+  color: #34495E;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .nav-list {
+    gap: 14px;
+  }
+
+  .program-card,
+  .feature-card,
+  .staff-card,
+  .achievement-card {
+    width: 220px;
+  }
+
+  .hero h1,
+  .hero-small h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile specific */
+@media (max-width: 900px) {
+  .nav-list {
+    position: fixed;
+    top: 68px;
+    right: 0;
+    background: #2C3E50;
+    width: 100%;
+    height: calc(100vh - 68px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+    transform: translateX(100%);
+    transition: transform .28s ease;
+  }
+
+  .nav-list.active {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  header {
+    padding: 12px 18px;
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .program-grid,
+  .feature-grid,
+  .resource-grid,
+  .staff-grid,
+  .achievement-grid,
+  .gallery-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-grid img {
+    width: 90%;
+    height: auto;
+  }
+
+  .admissions-info ul {
+    text-align: left;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+  }
+}
+
+/* small screens adjustments */
+@media (max-width:480px) {
+
+  .hero h1,
+  .hero-small h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p,
+  .hero-small p {
+    font-size: 0.95rem;
+    padding: 0 8px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+  }
+}
