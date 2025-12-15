@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Curriculum - Sunnydale Primary School</title>
+  <link rel="stylesheet" href="other.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="index.html">Mitaboni Boys High School</a></div>
+    <nav>
+      <div class="menu-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+      <ul class="nav-list">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="cariculum.html" class="active">Curriculum</a></li>
+        <li><a href="index.html#news">News & Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/main.html">Portal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-small">
+    <div class="hero-content">
+      <h1>Mitaboni Boys High School Curriculum</h1>
+      <p>Our curriculum fosters academic excellence, creativity and character development across all  levels.</p>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="programs">
+    <h2>Curriculum Overview</h2>
+    <p class="lede">At Mitaboni Boys High School we balance rigorous academics with hands-on learning, arts, and physical education to develop the  child.</p>
+
+    <div class="program-grid">
+      <div class="program-card">
+        <img src="../images/bg1.jpg" alt="Early Years">
+        <h3>Early Years</h3>
+        <p>Play-based learning that builds language, social-emotional skills and curiosity.</p>
+      </div>
+
+      <div class="program-card">
+        <img src="../images/bg1.jpg" alt="Primary Years">
+        <h3>Primary Years</h3>
+        <p>Strong foundations in literacy, numeracy and inquiry-based science and social studies.</p>
+      </div>
+
+      <div class="program-card">
+        <img src="../images/bg1.jpg" alt="Arts & Music">
+        <h3>Arts & Music</h3>
+        <p>Creative expression through visual arts, music and performance throughout the year.</p>
+      </div>
+
+      <div class="program-card">
+        <img src="../images/bg1.jpg" alt="Sports">
+        <h3>Sports & PE</h3>
+        <p>Structured physical education, team sports and healthy living programs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Approach -->
+  <section class="features">
+    <h2>Our Teaching Approach</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>Inquiry Based</h3>
+        <p>Students learn by asking questions and investigating real problems.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Differentiated</h3>
+        <p>Lessons are adapted to meet each child's learning needs.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Technology</h3>
+        <p>Safe, age-appropriate technology integrated into learning activities.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Assessment & Growth</h3>
+        <p>Frequent feedback for students and regular parent conferences.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum Documents -->
+  <section class="admissions-info">
+    <h2>Curriculum Documents & Resources</h2>
+    <p class="lede">Download curriculum guides, sample lesson plans and the school calendar.</p>
+    <div class="resource-grid">
+      <a class="resource-card" href="#" download>School Curriculum Guide (PDF)</a>
+      <a class="resource-card" href="#" download>Sample Week - Reception</a>
+      <a class="resource-card" href="#" download>Assessment & Reporting</a>
+      <a class="resource-card" href="#" download>School Calendar</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Want to learn more?</h2>
+    <p>Schedule a curriculum tour or contact our academic office for detailed information.</p>
+    <a class="btn btn-primary" href="contact.html">Contact Academic Office</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mitaboni Boys High School | <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <script>
+    // Mobile Menu
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navList.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
