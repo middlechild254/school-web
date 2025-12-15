@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Staff & Leadership - Sunnydale Primary School</title>
+  <link rel="stylesheet" href="other.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="index.html">Sunnydale Primary</a></div>
+    <nav>
+      <div class="menu-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+      <ul class="nav-list">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="cariculum.html">Curriculum</a></li>
+        <li><a href="index.html#news">News & Events</a></li>
+        <li><a href="staff.html" class="active">Staffs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/main.html">Portal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-small">
+    <div class="hero-content">
+      <h1>Staff & Leadership</h1>
+      <p>Meet the dedicated team who support learning and wellbeing every day.</p>
+    </div>
+  </section>
+
+  <!-- Leadership -->
+  <section class="achievements">
+    <h2>Leadership Team</h2>
+    <div class="staff-grid">
+      <div class="staff-card">
+        <img src="images/staff-head.png" alt="Headteacher">
+        <h3>Dr. Jane Roberts</h3>
+        <p>Headteacher — 15 years experience in primary education</p>
+      </div>
+      <div class="staff-card">
+        <img src="images/staff-deputy.png" alt="Deputy Head">
+        <h3>Mr. Samuel Oti</h3>
+        <p>Deputy Head — Curriculum & operations lead</p>
+      </div>
+      <div class="staff-card">
+        <img src="images/staff-sen.png" alt="SEN Coordinator">
+        <h3>Ms. Aisha Mbogo</h3>
+        <p>SEN Coordinator — Inclusion & learning support</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaching Staff -->
+  <section class="programs">
+    <h2>Teaching Staff</h2>
+    <p class="lede">Our teachers are qualified, DBS-checked and passionate about learning.</p>
+    <div class="staff-grid">
+      <div class="staff-card small">
+        <img src="images/teacher1.jpg" alt="Teacher">
+        <h4>Ms. Clara N.</h4>
+        <p>Year 1 Teacher</p>
+      </div>
+      <div class="staff-card small">
+        <img src="images/teacher2.jpg" alt="Teacher">
+        <h4>Mr. Daniel K.</h4>
+        <p>Year 3 Teacher</p>
+      </div>
+      <div class="staff-card small">
+        <img src="images/teacher3.jpg" alt="Teacher">
+        <h4>Ms. Ruth W.</h4>
+        <p>Art & Design</p>
+      </div>
+      <div class="staff-card small">
+        <img src="images/teacher4.jpg" alt="Teacher">
+        <h4>Coach Peter</h4>
+        <p>PE & Games</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Join Our Team</h2>
+    <p>We're always looking for passionate educators. Check our current vacancies or send your CV.</p>
+    <a class="btn btn-primary" href="#">View Vacancies</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sunnydale Primary School</p>
+  </footer>
+
+  <script>
+    // Mobile Menu
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navList.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
