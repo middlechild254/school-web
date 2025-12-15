@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Curriculum - Sunnydale Primary School</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="index.html">Mitaboni Boys High School</a></div>
+    <nav>
+      <div class="menu-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+      <ul class="nav-list">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admission.html" class="active">Admissions</a></li>
+        <li><a href="cariculum.html" >Curriculum</a></li>
+        <li><a href="index.html#news">News & Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/main.html">Portal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+     <section class="hero-small">
+        <div class="hero-content">
+            <h1>Mitaboni Boys Admission</h1>
+            <p>Enrol your child today and begin an inspiring educational journey at Mitaboni Boys High School.</p>
+        </div>
+    </section>
+
+  <!-- Admissions Process -->
+    <section class="admissions-info">
+        <h2>Admissions Process</h2>
+        <p>We welcome students from form 1 to form 4. Our admissions process is simple, friendly, and designed to support families.</p>
+
+        <ul>
+            <li>Complete the online application form below.</li>
+            <li>Upload required documents (birth certificate, previous school report).</li>
+            <li>Attend a school tour or interview session.</li>
+            <li>Receive admission confirmation and payment guidelines.</li>
+        </ul>
+    </section>
+
+    <!-- Admission Form -->
+    <section class="admission-form-section">
+        <h2>Online Application Form</h2>
+
+        <form class="admission-form">
+            <div class="form-group">
+                <label for="childName">Child’s Full Name</label>
+                <input type="text" id="childName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="grade">Grade Applying For</label>
+                <select id="grade" required>
+                    <option value="">Select Grade</option>
+                    <option>Nursery</option>
+                    <option>Reception</option>
+                    <option>Grade 1</option>
+                    <option>Grade 2</option>
+                    <option>Grade 3</option>
+                    <option>Grade 4</option>
+                    <option>Grade 5</option>
+                    <option>Grade 6</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="parentName">Parent/Guardian Name</label>
+                <input type="text" id="parentName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contactPhone">Phone Number</label>
+                <input type="tel" id="contactPhone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="documents">Upload Supporting Documents</label>
+                <input type="file" id="documents" multiple>
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h2>Admissions FAQ</h2>
+
+        <div class="faq-item">
+            <button class="faq-question">When do admissions open?</button>
+            <div class="faq-answer">
+                <p>Admissions open every January for the next academic year.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Is there an entrance test?</button>
+            <div class="faq-answer">
+                <p>We conduct a child-friendly readiness assessment.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Do you offer school tours?</button>
+            <div class="faq-answer">
+                <p>Yes! Parents may schedule a tour through our admissions office.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer>
+    <p>&copy; 2025 Sunnydale Primary School</p>
+  </footer>
+
+    <script>
+        // Mobile Menu
+        const menuToggle = document.getElementById("mobile-menu");
+        const navList = document.querySelector(".nav-list");
+
+        menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("active");
+            navList.classList.toggle("active");
+        });
+
+        // FAQ Toggle
+        const faqButtons = document.querySelectorAll(".faq-question");
+        faqButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const answer = btn.nextElementSibling;
+                answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + "px";
+            });
+        });
+    </script>
+
+</body>
+</html>
