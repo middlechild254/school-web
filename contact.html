@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - Sunnydale Primary School</title>
+  <link rel="stylesheet" href="other.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="index.html">Sunnydale Primary</a></div>
+    <nav>
+      <div class="menu-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+      <ul class="nav-list">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="cariculum.html">Curriculum</a></li>
+        <li><a href="index.html#news">News & Events</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="/main.html">Portal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-small">
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+      <p>We’re happy to answer questions or arrange a visit — contact our admissions or admin team.</p>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="admissions-info">
+    <h2>Get in Touch</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Admissions Office</h3>
+        <p>Email: <a href="mailto:admissions@sunnydale.edu">admissions@sunnydale.edu</a></p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+      <div class="contact-card">
+        <h3>Main Office</h3>
+        <p>Address: 123 Main Street, Townsville</p>
+        <p>Office Hours: Mon–Fri, 8:00am – 4:00pm</p>
+      </div>
+      <div class="contact-card">
+        <h3>Visit Us</h3>
+        <p>Schedule a tour to see classrooms, facilities and meet our team.</p>
+        <a class="btn btn-primary" href="admissions.html">Schedule a Visit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="admission-form-section">
+    <h2>Send Us a Message</h2>
+    <form class="admission-form" action="thankyou.html" method="get">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Map (placeholder - replace with embed if needed) -->
+  <section class="gallery">
+    <h2>Location</h2>
+    <div class="map-placeholder">[ Map embed goes here — replace with Google Maps iframe ]</div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sunnydale Primary School</p>
+  </footer>
+
+  <script>
+    // Mobile Menu
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navList.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
