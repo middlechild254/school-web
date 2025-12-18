@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>School Calendar - Sunnydale Primary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header-wrap">
+        <div class="header container">
+            <a class="logo" href="index.html">Mitaboni Boys High School</a>
+            <nav class="nav">
+                <a href="fee.html">Fee</a>
+                <a href="assignment.html">Assignments</a>
+                <a href="result.html">Results</a>
+                <a href="attendance.html">Attendance</a>
+                <a href="callender.html" class="active">Calendar</a>
+                
+                <a href="/main.html">Portal</a>
+            </nav>
+            <div id="mobileMenuBtn7" class="menu-toggle"><span class="bar"></span><span class="bar"></span><span
+                    class="bar"></span></div>
+        </div>
+    </div>
+
+    <section class="hero-small">
+        <div class="container">
+            <h1>School Calendar</h1>
+            <p class="lead">Important dates for the academic year.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="calendar">
+            <div class="month card">
+                <div>
+                    <h3>March 2025</h3>
+                    <p class="meta">Key dates below</p>
+                </div>
+                <div><a class="btn btn-outline" href="#">Download PDF</a></div>
+            </div>
+
+            <div class="calendar-grid">
+                <div class="calendar-day">
+                    <div class="dateLbl">1</div>
+                    <div class="small">No Events</div>
+                </div>
+                <div class="calendar-day">
+                    <div class="dateLbl">14</div>
+                    <div class="small">Sports Day</div>
+                </div>
+                <div class="calendar-day">
+                    <div class="dateLbl">22</div>
+                    <div class="small">Parent Meeting</div>
+                </div>
+                <div class="calendar-day">
+                    <div class="dateLbl">28</div>
+                    <div class="small">Field Trip</div>
+                </div>
+                <!-- fill remaining days as needed -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">© 2025 Mitaboni Boys High School</footer>
+    <script>document.getElementById('mobileMenuBtn7').addEventListener('click', () => document.querySelector('.nav').classList.toggle('show'));</script>
+</body>
+
+</html>
