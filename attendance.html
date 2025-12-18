@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - Student Portal</title>
+    <link rel="stylesheet" href="global.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Mitaboni Boys High School</a></div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="fee.html">Fees</a></li>
+                <li><a href="assignment.html">Assignments</a></li>
+                <li><a href="result.html">Results</a></li>
+                <li><a href="attendance.html" class="active">Attendance</a></li>
+                <li><a href="callender.html">Calender</a></li>
+
+                <li><a href="/main.html">Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-small">
+        <h1>📅 Student Attendance</h1>
+        <p>View attendance record since joining, termly summaries, and missed classes.</p>
+    </section>
+
+    <section class="attendance-section">
+        <h2>Attendance Record</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Term</th>
+                    <th>Total Classes</th>
+                    <th>Attended</th>
+                    <th>Missed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Term 1</td>
+                    <td>90</td>
+                    <td class="status-paid">85</td>
+                    <td class="status-missed">5</td>
+                </tr>
+                <tr>
+                    <td>Term 2</td>
+                    <td>88</td>
+                    <td class="status-paid">82</td>
+                    <td class="status-missed">6</td>
+                </tr>
+                <tr>
+                    <td>Term 3</td>
+                    <td>92</td>
+                    <td class="status-paid">90</td>
+                    <td class="status-missed">2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <canvas id="attendanceChart"></canvas>
+        <script>
+            const ctxAttend = document.getElementById('attendanceChart').getContext('2d');
+            new Chart(ctxAttend, {
+                type: 'line',
+                data: {
+                    labels: ['Term 1', 'Term 2', 'Term 3'],
+                    datasets: [
+                        { label: 'Attended', data: [85, 82, 90], borderColor: '#0B6B3A', fill: false },
+                        { label: 'Missed', data: [5, 6, 2], borderColor: '#E74C3C', fill: false }
+                    ]
+                },
+                options: { responsive: true, scales: { y: { beginAtZero: true, max: 100 } }, plugins: { legend: { position: 'top' } } }
+            });
+        </script>
+    </section>
+    <footer class="footer">© 2025 Mitaboni Boys High School</footer>
+</body>
+
+</html>
